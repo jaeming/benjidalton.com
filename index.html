@@ -11,12 +11,8 @@
 		<link rel="stylesheet" href="css/animate.css">
 		<meta name="viewport" content="width=device-width">
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Lobster|Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
-		
-	
-		
-	
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-			<script type="text/javascript">
+		<script type="text/javascript">
    $(document).ready(function(){
     var classes = ['hero', 'hero2', 'hero3', 'hero4', 'hero5'];
 		var randomNumber = Math.floor(Math.random() * classes.length);
@@ -25,82 +21,90 @@
     </script>
 		<script src="js/animatescroll.js"></script>
 		<script src="js/wow.min.js"></script>
-
+		
+	<script type="text/javascript">
+		$(document).on("scroll",function(){
+			if($(document).scrollTop()>490){ 
+				$("nav").removeClass("large").addClass("small");
+				}
+			else{
+				$("nav").removeClass("small").addClass("large");
+				}
+			});
+	</script>
+	
+		<script type="text/javascript">
+		$(document).on("scroll",function(){
+			if($(document).scrollTop()>490){ 
+				$("#title-small").removeClass("jumbo").addClass("mini");
+				}
+			else{
+				$("#title-small").removeClass("mini").addClass("jumbo");
+				}
+			});
+	</script>
 
 	</head>
 	<body>
-
-			<header>
-				<nav>
-					<div class="margin">
-						<div class="wow bounceInDown"> 
-						<a href="#">
-							<h1 class="logo animate-1" id="title">Benji Dalton</h1>
-						</a>
-						</div>
-						<ul class>
-							<li class="wow bounceIn"><a href="index.html" onclick="load_home()">Home</a></li>
-							<li class="wow bounceIn"><a href="#">Blog</a></li>
-							<li class="wow bounceIn"><a href="#">Portfolio</a></li>
-							<li class="wow bounceIn"><a href="contact.html" onclick="load_contact()">Contact</a></li>				
-						</ul>
-					</div>
-				</nav>
-			</header>
-			
-<!-- Injecting in other page content into index just because I can -->
-
-		<main id="content">
-		
-			<script>
-			$('a').click(function (e) {
-    // custom handling here
-    e.preventDefault();
-});	
-       function load_contact(){
-    $('#content').load('contact-form.html');
-}
-				
-       function load_home(){
-    $('#content').load('home.html');
-}				
-</script>
-			
+		<header>
+			<nav>
+				<div class="wow bounceInDown"> 
+					<a href="#">
+						<h1 class="logo animate-1" id="title">Benji Dalton</h1>
+					</a>
+				</div>
+				  <h1 id="title-small">Benji Dalton</h1>
+					<ul class="wow fadeInUp" data-wow-delay="1s">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>				
+					</ul>
+			</nav>
+		</header>
+			<main>
 				<h3>lorem Ipsum</h3>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nam, debitis accusantium inventore harum rerum nulla illo amet iste voluptates, quia obcaecati veritatis sit natus ut quod facilis ipsa alias!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque harum iure fugit ipsam commodi esse aliquam provident neque minima eveniet, repellendus earum molestiae delectus dolorum autem nesciunt, recusandae iusto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error autem doloremque, libero quia, rerum quam sapiente eum non suscipit cum quod beatae. Rerum enim eveniet culpa nemo tempore? Necessitatibus, laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quas itaque dolore, est nobis voluptate, omnis cumque odit eum dolor nihil iste numquam deserunt. Ipsum debitis tempore nostrum sapiente, rem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis, minima natus, similique.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ut, odit. Rerum aut ducimus repellendus accusamus non, commodi maxime tenetur distinctio, dolores temporibus blanditiis facere, enim qui impedit molestias perspiciatis.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quas itaque dolore, est nobis voluptate, omnis cumque odit eum dolor nihil iste numquam deserunt. Ipsum debitis tempore nostrum sapiente, rem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis, minima natus, similique.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ut, odit. Rerum aut ducimus repellendus accusamus non, commodi maxime tenetur distinctio, dolores temporibus blanditiis facere, enim qui impedit molestias perspiciatis.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quas itaque dolore, est nobis voluptate, omnis cumque odit eum dolor nihil iste numquam deserunt. Ipsum debitis tempore nostrum sapiente, rem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis, minima natus, similique.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ut, odit. Rerum aut ducimus repellendus accusamus non, commodi maxime tenetur distinctio, dolores temporibus blanditiis facere, enim qui impedit molestias perspiciatis.</p>
-
-
-				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nam, debitis accusantium inventore harum rerum nulla illo amet iste voluptates, quia obcaecati veritatis sit natus ut quod facilis ipsa alias!
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque harum iure fugit ipsam commodi esse aliquam provident neque minima eveniet, repellendus earum molestiae delectus dolorum autem nesciunt, recusandae iusto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error autem doloremque, libero quia, rerum quam sapiente eum non suscipit cum quod beatae. Rerum enim eveniet culpa nemo tempore? Necessitatibus, laborum.
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quas itaque dolore, est nobis voluptate, omnis cumque odit eum dolor nihil iste numquam deserunt. Ipsum debitis tempore nostrum sapiente, rem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis, minima natus, similique.
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ut, odit. Rerum aut ducimus repellendus accusamus non, commodi maxime tenetur distinctio, dolores temporibus blanditiis facere, enim qui impedit molestias perspiciatis.
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quas itaque dolore, est nobis voluptate, omnis cumque odit eum dolor nihil iste numquam deserunt. Ipsum debitis tempore nostrum sapiente, rem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis, minima natus, similique.
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ut, odit. Rerum aut ducimus repellendus accusamus non, commodi maxime tenetur distinctio, dolores temporibus blanditiis facere, enim qui impedit molestias perspiciatis.
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quas itaque dolore, est nobis voluptate, omnis cumque odit eum dolor nihil iste numquam deserunt. Ipsum debitis tempore nostrum sapiente, rem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis, minima natus, similique.
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ut, odit. Rerum aut ducimus repellendus accusamus non, commodi maxime tenetur distinctio, dolores temporibus blanditiis facere, enim qui impedit molestias perspiciatis.
+				</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quas itaque dolore, est nobis voluptate, omnis cumque odit eum dolor nihil iste numquam deserunt. Ipsum debitis tempore nostrum sapiente, rem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis, minima natus, similique.
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ut, odit. Rerum aut ducimus repellendus accusamus non, commodi maxime tenetur distinctio, dolores temporibus blanditiis facere, enim qui impedit molestias perspiciatis.
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quas itaque dolore, est nobis voluptate, omnis cumque odit eum dolor nihil iste numquam deserunt. Ipsum debitis tempore nostrum sapiente, rem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis, minima natus, similique.
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ut, odit. Rerum aut ducimus repellendus accusamus non, commodi maxime tenetur distinctio, dolores temporibus blanditiis facere, enim qui impedit molestias perspiciatis.
+				</p>
 		</main>	
-		
 		<footer>
-			
 			<div class="margin">
 				<p>© Benji Dalton 2014</p>
 				<a href="http://twitter.com/daylightsavings"><img src="img/twitter.png" alt="" class="social-icon"></a>
 				<a href="http://facebook.com/daylightsavings"><img src="img/facebook.png" alt="" class="social-icon"></a>
-
 			</div>
 		</footer>			
-<script>
- $( document ).ready(function() {
-	new WOW().init();
-	 });
-</script>
+	<script>
+$( document ).ready(function() {
+new WOW().init();
+ });
+	</script>
 	<script>		
 $( document ).ready(function() {
-			$('#title').animatescroll({scrollSpeed:2000,easing:'easeInOutBack', element:'body',padding:-190});
-			
-
-		});
+		$('#title').animatescroll({scrollSpeed:2000,easing:'easeInOutBack', element:'body',padding:-190});
+	});
 	</script>
-
-</body></html>
+	</body>
+</html>

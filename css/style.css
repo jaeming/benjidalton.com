@@ -25,6 +25,9 @@ main {
 	padding: 5px 0;
 }
 
+
+
+
 img {
 	max-width: 100%;
 }
@@ -77,6 +80,7 @@ HEADER & NAV
   background-size: cover;
 	height: 33em;
 	box-shadow: 0 4px 2px -2px #b5b5b5;
+	overflow: hidden;	
 }
 
 .hero2 {
@@ -84,6 +88,7 @@ HEADER & NAV
   background-size: cover;
 	height: 33em;
 	box-shadow: 0 4px 2px -2px #b5b5b5;
+	overflow: hidden;	
 }
 
 .hero3 {
@@ -91,6 +96,7 @@ HEADER & NAV
   background-size: cover;
 	height: 33em;
 	box-shadow: 0 4px 2px -2px #b5b5b5;
+	overflow: hidden;	
 }
 
 .hero4 {
@@ -98,6 +104,7 @@ HEADER & NAV
   background-size: cover;
 	height: 33em;
 	box-shadow: 0 4px 2px -2px #b5b5b5;
+	overflow: hidden;	
 }
 
 .hero5 {
@@ -105,6 +112,7 @@ HEADER & NAV
   background-size: cover;
 	height: 33em;
 	box-shadow: 0 4px 2px -2px #b5b5b5;
+	overflow: hidden;
 }
 
 .hero6 {
@@ -112,6 +120,7 @@ HEADER & NAV
   background-size: cover;
 	height: 33em;
 	box-shadow: 0 4px 2px -2px #b5b5b5;
+	overflow: hidden;
 }
 /*End of Randomized header Image*/
 
@@ -119,27 +128,88 @@ HEADER & NAV
 
 .logo {
 	text-align: center;
-	padding-top: 35%;
+	padding-top: 3.05em;
+	transition: all .6s;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
 }
 
+#title-small {
+	color: rgba(245, 245, 245, 0);
+	font-size: 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: all .6s;
+	z-index: 9000;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
+}
+
+/* Logo Small begin*/
+
+#title-small.jumbo {
+	color: rgba(245, 245, 245, 0);
+	font-size: 0px;
+	position: fixed;
+	top: 0;
+	left: 300px;
+	z-index: 9000;	
+	transition: all .6s;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
+}
+
+#title-small.mini {
+	text-align: left;
+	color: whitesmoke;
+	float: left;
+	font-size: 30px;
+	padding-top: 9px;
+	padding-left: 15%;
+	padding-right: 15%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: all .6s;
+	z-index: 9000;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
+}
+
+.menu-margin {
+	max-width: 
+}
+/* Logo Small end*/
+
+
+
+
+nav, a, img, li{
+	transition: all .6s;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
+}
 
 nav ul {
 	list-style: none;
 	text-align: center;
-	margin: 10px 0;
-	padding: 18px 0 0 0;
-
-
-
-	
+	background: rgba(39, 39, 39, 0.69);
+	margin: 42.7px 0;
+	padding: 20px 0 20px 0;
+	transition: all .6s;
 }
 
 nav ul li {
 	padding: 0;	
 	display: inline;
-
+	transition: all .6s;
 }
-
 
 
 nav a {
@@ -147,10 +217,76 @@ nav a {
 	font-family: 'Open Sans', sans-serif;
 	padding: 5px 15px;
 	font-size: 1.2em;
-	font-weight: 600;
+	font-weight: 400;
 	color: whitesmoke;
 	text-shadow: 0 0 0px  whitesmoke;
+	transition: all .6s;
 	}
+
+/*nav-large*/
+nav.large ul {
+	list-style: none;
+	text-align: center;
+	background: rgba(39, 39, 39, 0.69);
+	margin: 42.7px 0;
+	padding: 20px 0 20px 0;
+	transition: all .6s;
+}
+
+nav.large ul li {
+	padding: 0;	
+	display: inline;
+	transition: all .6s;
+}
+
+
+nav.large a {
+	transition: text-shadow 0.5s ease;
+	font-family: 'Open Sans', sans-serif;
+	padding: 5px 15px;
+	font-size: 1.2em;
+	font-weight: 400;
+	color: whitesmoke;
+	text-shadow: 0 0 0px  whitesmoke;
+	transition: all .6s;
+	}
+
+
+/*nav small*/
+nav.small ul {
+	list-style: none;
+	text-align: right;
+	width: 100%;
+	background: rgb(59, 59, 59);
+	margin: 0px 0;
+	padding: 10px 15% 10px 0;
+	transition: all .6s;
+	position: fixed;
+	float: right;
+	right: 0;
+	top: 0;
+}
+
+nav.small ul li {
+	padding: 0;	
+	display: inline;
+	transition: all .6s;
+}
+
+
+nav.small a {
+	transition: text-shadow 0.5s ease;
+	font-family: 'Open Sans', sans-serif;
+	padding: 5px 15px;
+	font-size: 1.1em;
+	font-weight: 400;
+	color: whitesmoke;
+	text-shadow: 0 0 0px  whitesmoke;
+	transition: all .6s;
+	}
+
+/*end small nav*/
+
 
 nav a:hover {
 	color: whitesmoke; 
@@ -226,6 +362,10 @@ Body
 	padding-top: 1%;
 }
 
+main {
+	padding-top: 80px;
+}
+
 
 /******************
 Contact Form
@@ -278,6 +418,8 @@ Contact
 }
 
 
+
+
 /******************
 Responsive
 ******************/
@@ -296,11 +438,107 @@ Responsive
 	text-align: center;
 	padding-top: 60%;
 	}
-	
 
+
+
+
+#title-small.mini {
+	text-align: center;
+	color: whitesmoke;
+	width: 100%;
+	float: right;
+	font-size: 30px;
+	position: fixed;
+	margin: 0 0;
+	padding: 15px 2% 10px 0;
+	top: 0;
+	left: 0;
+	transition: all .6s;
+	z-index: 9000;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
+}
+	
+nav.small ul {
+	list-style: none;
+	text-align: center;
+	width: 100%;
+	background: rgb(59, 59, 59);
+	margin: 0 0;
+	padding: 60px 2% 10px 0;
+	transition: all .6s;
+	position: fixed;
+	float: right;
+	right: 0;
+	top: 0;
+}
+	
+main p, h3 {
+	max-width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+ }
+	
+		
 }
 
 
+@media (min-width: 1030px) {
+
+#title-small.mini {
+	text-align: left;
+	color: whitesmoke;
+	float: left;
+	font-size: 30px;
+	padding-top: 9px;
+	padding-left: 7%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: all .6s;
+	z-index: 9000;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
+}
+
+	}
+
+@media (min-width: 1250px) {
+
+#title-small.mini {
+	text-align: left;
+	color: whitesmoke;
+	float: left;
+	font-size: 30px;
+	padding-top: 9px;
+	padding-left: 18%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: all .6s;
+	z-index: 9000;
+	-moz-transition: all .6s; /* Firefox 4 */
+	-webkit-transition: all .6s; /* Safari and Chrome */
+	-o-transition: all .6s; /* Opera */
+}
+	
+nav.small ul {
+	list-style: none;
+	text-align: right;
+	width: 100%;
+	background: rgb(59, 59, 59);
+	margin: 0px 0;
+	padding: 10px 20% 10px 0;
+	transition: all .6s;
+	position: fixed;
+	float: right;
+	right: 0;
+	top: 0;
+}	
+
+	}
 
 
 
