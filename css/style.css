@@ -48,7 +48,7 @@ a {
 }
 
 body {
-	font-family: 'Arvo', serif;
+  font-family: 'Ubuntu', sans-serif;
   line-height: 1.6rem;
 	font-size: 1rem;
 	font-weight: 400;
@@ -80,9 +80,9 @@ h2 {
 }
 
 h3 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'arvo', serif;
 	font-size: 1.5rem;
-	font-weight: 800;
+	font-weight: bold;
 	line-height: 2.555rem;
 	color: #484848;
 }
