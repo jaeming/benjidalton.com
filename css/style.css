@@ -87,7 +87,13 @@ h3 {
 	color: #484848;
 }
 
-
+pre {
+  padding: 0.1em 0.5em 0.3em 0.8em;
+  border-left: 11px solid #F5F5F5;
+  margin: 1.7em 0 1.7em 0em;
+  overflow: auto;
+  width: 93%;
+  }
 
 /******************
 HEADER & NAV
@@ -409,6 +415,13 @@ Blog
 .center {
   text-align: center;
   padding-top: 1%;
+}
+
+.center-img {
+  text-align: center;
+	margin: 0 auto;
+	background: #1f1f1f;
+	border-radius: 10px;
 }
 
 .post-footer {
@@ -770,6 +783,8 @@ ABOUT SECTION
 /******************
 HOME SECTION
 ******************/
+
+
 
 .home-section {
   background: whitesmoke;
